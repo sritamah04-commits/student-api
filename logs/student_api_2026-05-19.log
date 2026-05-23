@@ -1,0 +1,91 @@
+2026-05-19 11:41:32 | WARNING | (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\Workspace\student-api\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-05-19 11:44:58 | ERROR | Form data requires "python-multipart" to be installed. 
+You can install "python-multipart" with: 
+
+pip install python-multipart
+
+2026-05-19 11:50:45 | INFO | Incoming request - GET http://127.0.0.1:8000/docs
+2026-05-19 11:50:45 | INFO | completed - GET http://127.0.0.1:8000/docs | status_code=200 | duration = 0.002s
+2026-05-19 11:50:46 | INFO | Incoming request - GET http://127.0.0.1:8000/openapi.json
+2026-05-19 11:50:47 | INFO | completed - GET http://127.0.0.1:8000/openapi.json | status_code=200 | duration = 0.4286s
+2026-05-19 11:52:05 | INFO | Incoming request - GET http://127.0.0.1:8000/docs
+2026-05-19 11:52:05 | INFO | completed - GET http://127.0.0.1:8000/docs | status_code=200 | duration = 0.0023s
+2026-05-19 11:52:06 | INFO | Incoming request - GET http://127.0.0.1:8000/openapi.json
+2026-05-19 11:52:06 | INFO | completed - GET http://127.0.0.1:8000/openapi.json | status_code=200 | duration = 0.0s
+2026-05-19 11:52:31 | INFO | Incoming request - GET http://127.0.0.1:8000/docs
+2026-05-19 11:52:31 | INFO | completed - GET http://127.0.0.1:8000/docs | status_code=200 | duration = 0.0s
+2026-05-19 11:52:32 | INFO | Incoming request - GET http://127.0.0.1:8000/openapi.json
+2026-05-19 11:52:32 | INFO | completed - GET http://127.0.0.1:8000/openapi.json | status_code=200 | duration = 0.0036s
+2026-05-19 11:53:17 | INFO | Incoming request - GET http://127.0.0.1:8000/openapi.json
+2026-05-19 11:53:17 | INFO | completed - GET http://127.0.0.1:8000/openapi.json | status_code=200 | duration = 0.0046s
+2026-05-19 11:53:17 | INFO | Incoming request - GET http://127.0.0.1:8000/favicon.ico
+2026-05-19 11:53:17 | INFO | completed - GET http://127.0.0.1:8000/favicon.ico | status_code=404 | duration = 0.0s
+2026-05-19 11:54:16 | INFO | Incoming request - GET http://127.0.0.1:8000/docs
+2026-05-19 11:54:16 | INFO | completed - GET http://127.0.0.1:8000/docs | status_code=200 | duration = 0.001s
+2026-05-19 11:54:17 | INFO | Incoming request - GET http://127.0.0.1:8000/openapi.json
+2026-05-19 11:54:17 | INFO | completed - GET http://127.0.0.1:8000/openapi.json | status_code=200 | duration = 0.0018s
+2026-05-19 11:58:22 | INFO | Incoming request - POST http://127.0.0.1:8000/login
+2026-05-19 11:58:22 | INFO | Login attempt for username='admin'
+2026-05-19 11:58:23 | INFO | Login successful for username='admin'
+2026-05-19 11:58:23 | INFO | completed - POST http://127.0.0.1:8000/login | status_code=200 | duration = 0.5332s
+2026-05-19 11:58:25 | INFO | Incoming request - POST http://127.0.0.1:8000/login
+2026-05-19 11:58:25 | INFO | Login attempt for username='admin'
+2026-05-19 11:58:26 | INFO | Login successful for username='admin'
+2026-05-19 11:58:26 | INFO | completed - POST http://127.0.0.1:8000/login | status_code=200 | duration = 0.4386s
+2026-05-19 11:58:30 | INFO | Incoming request - POST http://127.0.0.1:8000/login
+2026-05-19 11:58:30 | INFO | Login attempt for username='admin'
+2026-05-19 11:58:31 | INFO | Login successful for username='admin'
+2026-05-19 11:58:31 | INFO | completed - POST http://127.0.0.1:8000/login | status_code=200 | duration = 0.4824s
+2026-05-19 12:00:20 | INFO | Incoming request - POST http://127.0.0.1:8000/login
+2026-05-19 12:00:20 | INFO | Login attempt for username='admin'
+2026-05-19 12:00:20 | INFO | Login successful for username='admin'
+2026-05-19 12:00:20 | INFO | completed - POST http://127.0.0.1:8000/login | status_code=200 | duration = 0.4727s
+2026-05-19 12:01:59 | INFO | Incoming request - GET http://127.0.0.1:8000/students/?page=1&size=10&order=asc
+2026-05-19 12:01:59 | INFO | Fetching students — page=1, size=10, course=None, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=None, order=asc
+2026-05-19 12:01:59 | ERROR | Unexpected error on GET http://127.0.0.1:8000/students/?page=1&size=10&order=asc: type object 'Student' has no attribute 'course'
+2026-05-19 12:04:40 | INFO | Incoming request - POST http://127.0.0.1:8000/students/
+2026-05-19 12:04:40 | INFO | User 'admin' creating student with email=sri@1234gmail.com
+2026-05-19 12:04:40 | ERROR | Unexpected error on POST http://127.0.0.1:8000/students/: 'course' is an invalid keyword argument for Student
+2026-05-19 12:19:41 | INFO | Incoming request - GET http://127.0.0.1:8000/
+2026-05-19 12:19:41 | INFO | Root endpoint accessed
+2026-05-19 12:19:41 | INFO | completed - GET http://127.0.0.1:8000/ | status_code=200 | duration = 0.0202s
+2026-05-19 12:22:25 | INFO | Incoming request - GET http://127.0.0.1:8000/
+2026-05-19 12:22:25 | INFO | Root endpoint accessed
+2026-05-19 12:22:25 | INFO | completed - GET http://127.0.0.1:8000/ | status_code=200 | duration = 0.0035s
+2026-05-19 12:22:25 | INFO | Incoming request - GET http://127.0.0.1:8000/favicon.ico
+2026-05-19 12:22:25 | INFO | completed - GET http://127.0.0.1:8000/favicon.ico | status_code=404 | duration = 0.002s
+2026-05-19 12:22:38 | INFO | Incoming request - GET http://127.0.0.1:8000/favicon.ico
+2026-05-19 12:22:38 | INFO | completed - GET http://127.0.0.1:8000/favicon.ico | status_code=404 | duration = 0.002s
+2026-05-19 12:23:16 | INFO | Incoming request - GET http://127.0.0.1:8000/docs
+2026-05-19 12:23:16 | INFO | completed - GET http://127.0.0.1:8000/docs | status_code=200 | duration = 0.0159s
+2026-05-19 12:23:16 | INFO | Incoming request - GET http://127.0.0.1:8000/openapi.json
+2026-05-19 12:23:16 | INFO | completed - GET http://127.0.0.1:8000/openapi.json | status_code=200 | duration = 0.1203s
+2026-05-19 21:22:53 | INFO | Incoming request - GET http://127.0.0.1:8000/docs
+2026-05-19 21:22:53 | INFO | completed - GET http://127.0.0.1:8000/docs | status_code=200 | duration = 0.0024s
+2026-05-19 21:22:53 | INFO | Incoming request - GET http://127.0.0.1:8000/openapi.json
+2026-05-19 21:22:53 | INFO | completed - GET http://127.0.0.1:8000/openapi.json | status_code=200 | duration = 0.1207s
+2026-05-19 21:23:36 | INFO | Incoming request - POST http://127.0.0.1:8000/login
+2026-05-19 21:23:36 | INFO | Login attempt for username='admin'
+2026-05-19 21:23:36 | INFO | Login successful for username='admin'
+2026-05-19 21:23:37 | INFO | completed - POST http://127.0.0.1:8000/login | status_code=200 | duration = 0.4972s
+2026-05-19 21:25:16 | INFO | Incoming request - POST http://127.0.0.1:8000/login
+2026-05-19 21:25:16 | INFO | Login attempt for username='admin'
+2026-05-19 21:25:17 | INFO | Login successful for username='admin'
+2026-05-19 21:25:17 | INFO | completed - POST http://127.0.0.1:8000/login | status_code=200 | duration = 0.4704s
+2026-05-19 21:27:13 | INFO | Incoming request - POST http://127.0.0.1:8000/students/
+2026-05-19 21:27:13 | INFO | User 'admin' creating student with email=sri@1234gmail.com
+2026-05-19 21:27:13 | INFO | Student created successfully with id=1
+2026-05-19 21:27:13 | INFO | completed - POST http://127.0.0.1:8000/students/ | status_code=201 | duration = 0.0611s
+2026-05-19 21:28:01 | INFO | Incoming request - GET http://127.0.0.1:8000/students/1
+2026-05-19 21:28:01 | INFO | Fetching student with id=1
+2026-05-19 21:28:01 | INFO | Student id=1 fetched successfully
+2026-05-19 21:28:01 | INFO | completed - GET http://127.0.0.1:8000/students/1 | status_code=200 | duration = 0.043s
+2026-05-19 21:29:31 | INFO | Incoming request - GET http://127.0.0.1:8000/students/?page=1&size=10&order=asc
+2026-05-19 21:29:31 | INFO | Fetching students — page=1, size=10, course=None, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=None, order=asc
+2026-05-19 21:29:31 | INFO | Returned 1 of 1 total students
+2026-05-19 21:29:31 | INFO | completed - GET http://127.0.0.1:8000/students/?page=1&size=10&order=asc | status_code=200 | duration = 0.0372s

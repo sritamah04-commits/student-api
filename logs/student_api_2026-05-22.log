@@ -1,0 +1,990 @@
+2026-05-22 21:31:12 | INFO | Incoming request - POST http://testserver/login
+2026-05-22 21:31:12 | INFO | Login attempt for username='admin'
+2026-05-22 21:31:12 | INFO | Login successful for username='admin'
+2026-05-22 21:31:12 | INFO | completed - POST http://testserver/login | status_code=200 | duration = 0.3945s
+2026-05-22 21:31:12 | INFO | HTTP Request: POST http://testserver/login "HTTP/1.1 200 OK"
+2026-05-22 21:31:12 | INFO | Incoming request - POST http://testserver/login
+2026-05-22 21:31:12 | INFO | Login attempt for username='admin'
+2026-05-22 21:31:12 | WARNING | Failed login — wrong password for username='admin'
+2026-05-22 21:31:12 | INFO | completed - POST http://testserver/login | status_code=401 | duration = 0.3729s
+2026-05-22 21:31:12 | INFO | HTTP Request: POST http://testserver/login "HTTP/1.1 401 Unauthorized"
+2026-05-22 21:31:12 | INFO | Incoming request - POST http://testserver/login
+2026-05-22 21:31:12 | INFO | Login attempt for username='wronguser'
+2026-05-22 21:31:12 | WARNING | Failed login — invalid username='wronguser'
+2026-05-22 21:31:12 | INFO | completed - POST http://testserver/login | status_code=401 | duration = 0.0106s
+2026-05-22 21:31:12 | INFO | HTTP Request: POST http://testserver/login "HTTP/1.1 401 Unauthorized"
+2026-05-22 21:31:12 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:12 | INFO | completed - POST http://testserver/students/ | status_code=401 | duration = 0.0s
+2026-05-22 21:31:12 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 401 Unauthorized"
+2026-05-22 21:31:13 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:13 | INFO | completed - POST http://testserver/students/ | status_code=401 | duration = 0.0s
+2026-05-22 21:31:13 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 401 Unauthorized"
+2026-05-22 21:31:13 | INFO | Incoming request - POST http://testserver/login
+2026-05-22 21:31:13 | INFO | Login attempt for username='admin'
+2026-05-22 21:31:13 | INFO | Login successful for username='admin'
+2026-05-22 21:31:13 | INFO | completed - POST http://testserver/login | status_code=200 | duration = 0.359s
+2026-05-22 21:31:13 | INFO | HTTP Request: POST http://testserver/login "HTTP/1.1 200 OK"
+2026-05-22 21:31:13 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:13 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:31:13 | INFO | Student created successfully with id=1
+2026-05-22 21:31:13 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0155s
+2026-05-22 21:31:13 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:13 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:13 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:31:13 | INFO | Student created successfully with id=1
+2026-05-22 21:31:13 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0231s
+2026-05-22 21:31:13 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:13 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:13 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:31:13 | WARNING | Duplicate email attempted: sri1234@gmail.com
+2026-05-22 21:31:13 | INFO | completed - POST http://testserver/students/ | status_code=400 | duration = 0.0041s
+2026-05-22 21:31:13 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 400 Bad Request"
+2026-05-22 21:31:13 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:13 | WARNING | Validation error on POST http://testserver/students/: ['body->name:String should have at least 2 characters']
+2026-05-22 21:31:13 | INFO | completed - POST http://testserver/students/ | status_code=500 | duration = 0.0s
+2026-05-22 21:31:13 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 500 Internal Server Error"
+2026-05-22 21:31:13 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:13 | WARNING | Validation error on POST http://testserver/students/: ['body->age:Input should be less than or equal to 100']
+2026-05-22 21:31:13 | INFO | completed - POST http://testserver/students/ | status_code=500 | duration = 0.0124s
+2026-05-22 21:31:13 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 500 Internal Server Error"
+2026-05-22 21:31:13 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:13 | WARNING | Validation error on POST http://testserver/students/: ['body->gpa:Input should be less than or equal to 10']
+2026-05-22 21:31:13 | INFO | completed - POST http://testserver/students/ | status_code=500 | duration = 0.0028s
+2026-05-22 21:31:13 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 500 Internal Server Error"
+2026-05-22 21:31:13 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:13 | WARNING | Validation error on POST http://testserver/students/: ['body->email:Value error, Email must be a valid email address']
+2026-05-22 21:31:13 | INFO | completed - POST http://testserver/students/ | status_code=500 | duration = 0.0143s
+2026-05-22 21:31:13 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 500 Internal Server Error"
+2026-05-22 21:31:13 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:13 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:31:13 | INFO | Student created successfully with id=1
+2026-05-22 21:31:13 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0161s
+2026-05-22 21:31:13 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:13 | INFO | Incoming request - GET http://testserver/students/
+2026-05-22 21:31:13 | INFO | Fetching students — page=1, size=10, course=None, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=None, order=asc
+2026-05-22 21:31:13 | INFO | Returned 1 of 1 total students
+2026-05-22 21:31:13 | INFO | completed - GET http://testserver/students/ | status_code=200 | duration = 0.0096s
+2026-05-22 21:31:13 | INFO | HTTP Request: GET http://testserver/students/ "HTTP/1.1 200 OK"
+2026-05-22 21:31:14 | INFO | Incoming request - GET http://testserver/students/
+2026-05-22 21:31:14 | INFO | Fetching students — page=1, size=10, course=None, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=None, order=asc
+2026-05-22 21:31:14 | INFO | Returned 0 of 0 total students
+2026-05-22 21:31:14 | INFO | completed - GET http://testserver/students/ | status_code=200 | duration = 0.0158s
+2026-05-22 21:31:14 | INFO | HTTP Request: GET http://testserver/students/ "HTTP/1.1 200 OK"
+2026-05-22 21:31:14 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:14 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:31:14 | INFO | Student created successfully with id=1
+2026-05-22 21:31:14 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.014s
+2026-05-22 21:31:14 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:14 | INFO | Incoming request - GET http://testserver/students/1
+2026-05-22 21:31:14 | INFO | Fetching student with id=1
+2026-05-22 21:31:14 | INFO | Student id=1 fetched successfully
+2026-05-22 21:31:14 | INFO | completed - GET http://testserver/students/1 | status_code=200 | duration = 0.0177s
+2026-05-22 21:31:14 | INFO | HTTP Request: GET http://testserver/students/1 "HTTP/1.1 200 OK"
+2026-05-22 21:31:14 | INFO | Incoming request - GET http://testserver/students/99999
+2026-05-22 21:31:14 | INFO | Fetching student with id=99999
+2026-05-22 21:31:14 | WARNING | Student id=99999 not found
+2026-05-22 21:31:14 | INFO | completed - GET http://testserver/students/99999 | status_code=404 | duration = 0.0044s
+2026-05-22 21:31:14 | INFO | HTTP Request: GET http://testserver/students/99999 "HTTP/1.1 404 Not Found"
+2026-05-22 21:31:14 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:14 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:31:14 | INFO | Student created successfully with id=1
+2026-05-22 21:31:14 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0117s
+2026-05-22 21:31:14 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:14 | INFO | Incoming request - PUT http://testserver/students/1
+2026-05-22 21:31:14 | INFO | User 'admin' updating student id=1
+2026-05-22 21:31:14 | INFO | Student id=1 updated successfully
+2026-05-22 21:31:14 | INFO | completed - PUT http://testserver/students/1 | status_code=200 | duration = 0.0145s
+2026-05-22 21:31:14 | INFO | HTTP Request: PUT http://testserver/students/1 "HTTP/1.1 200 OK"
+2026-05-22 21:31:14 | INFO | Incoming request - PUT http://testserver/students/99999
+2026-05-22 21:31:14 | INFO | User 'admin' updating student id=99999
+2026-05-22 21:31:14 | WARNING | Student id=99999 not found for update
+2026-05-22 21:31:14 | INFO | completed - PUT http://testserver/students/99999 | status_code=404 | duration = 0.0089s
+2026-05-22 21:31:14 | INFO | HTTP Request: PUT http://testserver/students/99999 "HTTP/1.1 404 Not Found"
+2026-05-22 21:31:14 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:14 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:31:14 | INFO | Student created successfully with id=1
+2026-05-22 21:31:14 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0163s
+2026-05-22 21:31:14 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:14 | INFO | Incoming request - PUT http://testserver/students/1
+2026-05-22 21:31:14 | WARNING | Validation error on PUT http://testserver/students/1: ['body->gpa:Input should be less than or equal to 10']
+2026-05-22 21:31:14 | INFO | completed - PUT http://testserver/students/1 | status_code=500 | duration = 0.0049s
+2026-05-22 21:31:14 | INFO | HTTP Request: PUT http://testserver/students/1 "HTTP/1.1 500 Internal Server Error"
+2026-05-22 21:31:14 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:14 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:31:14 | INFO | Student created successfully with id=1
+2026-05-22 21:31:14 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0209s
+2026-05-22 21:31:14 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:14 | INFO | Incoming request - DELETE http://testserver/students/1
+2026-05-22 21:31:14 | INFO | User 'admin' deleting student id=1
+2026-05-22 21:31:14 | INFO | Student id=1 deleted successfully
+2026-05-22 21:31:14 | INFO | completed - DELETE http://testserver/students/1 | status_code=204 | duration = 0.0144s
+2026-05-22 21:31:14 | INFO | HTTP Request: DELETE http://testserver/students/1 "HTTP/1.1 204 No Content"
+2026-05-22 21:31:14 | INFO | Incoming request - GET http://testserver/students/1
+2026-05-22 21:31:14 | INFO | Fetching student with id=1
+2026-05-22 21:31:14 | WARNING | Student id=1 not found
+2026-05-22 21:31:14 | INFO | completed - GET http://testserver/students/1 | status_code=404 | duration = 0.0s
+2026-05-22 21:31:14 | INFO | HTTP Request: GET http://testserver/students/1 "HTTP/1.1 404 Not Found"
+2026-05-22 21:31:14 | INFO | Incoming request - DELETE http://testserver/students/99999
+2026-05-22 21:31:14 | INFO | User 'admin' deleting student id=99999
+2026-05-22 21:31:14 | WARNING | Student id=99999 not found for deletion
+2026-05-22 21:31:14 | INFO | completed - DELETE http://testserver/students/99999 | status_code=404 | duration = 0.013s
+2026-05-22 21:31:14 | INFO | HTTP Request: DELETE http://testserver/students/99999 "HTTP/1.1 404 Not Found"
+2026-05-22 21:31:14 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:14 | WARNING | Validation error on POST http://testserver/students/: ['body->name:Value error, Name must contain only letters and spaces']
+2026-05-22 21:31:14 | INFO | completed - POST http://testserver/students/ | status_code=500 | duration = 0.003s
+2026-05-22 21:31:14 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 500 Internal Server Error"
+2026-05-22 21:31:14 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:14 | WARNING | Validation error on POST http://testserver/students/: ['body->name:Value error, Name must contain only letters and spaces']
+2026-05-22 21:31:14 | INFO | completed - POST http://testserver/students/ | status_code=500 | duration = 0.0127s
+2026-05-22 21:31:14 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 500 Internal Server Error"
+2026-05-22 21:31:14 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:14 | WARNING | Validation error on POST http://testserver/students/: ['body->name:Value error, Name must contain only letters and spaces']
+2026-05-22 21:31:14 | INFO | completed - POST http://testserver/students/ | status_code=500 | duration = 0.0021s
+2026-05-22 21:31:14 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 500 Internal Server Error"
+2026-05-22 21:31:14 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:14 | WARNING | Validation error on POST http://testserver/students/: ['body->name:Value error, Name must contain only letters and spaces']
+2026-05-22 21:31:14 | INFO | completed - POST http://testserver/students/ | status_code=500 | duration = 0.0055s
+2026-05-22 21:31:14 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 500 Internal Server Error"
+2026-05-22 21:31:14 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:14 | WARNING | Validation error on POST http://testserver/students/: ['body->name:Value error, Name must contain only letters and spaces']
+2026-05-22 21:31:14 | INFO | completed - POST http://testserver/students/ | status_code=500 | duration = 0.01s
+2026-05-22 21:31:14 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 500 Internal Server Error"
+2026-05-22 21:31:14 | INFO | Incoming request - GET http://testserver/students/?page=1&size=3
+2026-05-22 21:31:14 | INFO | Fetching students — page=1, size=3, course=None, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=None, order=asc
+2026-05-22 21:31:14 | INFO | Returned 0 of 0 total students
+2026-05-22 21:31:14 | INFO | completed - GET http://testserver/students/?page=1&size=3 | status_code=200 | duration = 0.0s
+2026-05-22 21:31:14 | INFO | HTTP Request: GET http://testserver/students/?page=1&size=3 "HTTP/1.1 200 OK"
+2026-05-22 21:31:14 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:14 | INFO | User 'admin' creating student with email=cs@mail.com
+2026-05-22 21:31:14 | INFO | Student created successfully with id=1
+2026-05-22 21:31:14 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0169s
+2026-05-22 21:31:14 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:14 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:14 | INFO | User 'admin' creating student with email=math@mail.com
+2026-05-22 21:31:14 | INFO | Student created successfully with id=2
+2026-05-22 21:31:14 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0106s
+2026-05-22 21:31:14 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:14 | INFO | Incoming request - GET http://testserver/students/?course=Computer%20Science
+2026-05-22 21:31:14 | INFO | Fetching students — page=1, size=10, course=Computer Science, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=None, order=asc
+2026-05-22 21:31:14 | INFO | Returned 1 of 1 total students
+2026-05-22 21:31:14 | INFO | completed - GET http://testserver/students/?course=Computer%20Science | status_code=200 | duration = 0.0166s
+2026-05-22 21:31:14 | INFO | HTTP Request: GET http://testserver/students/?course=Computer%20Science "HTTP/1.1 200 OK"
+2026-05-22 21:31:14 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:14 | INFO | User 'admin' creating student with email=high@mail.com
+2026-05-22 21:31:14 | INFO | Student created successfully with id=1
+2026-05-22 21:31:14 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.01s
+2026-05-22 21:31:14 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:14 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:14 | INFO | User 'admin' creating student with email=low@mail.com
+2026-05-22 21:31:14 | INFO | Student created successfully with id=2
+2026-05-22 21:31:14 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0254s
+2026-05-22 21:31:14 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:14 | INFO | Incoming request - GET http://testserver/students/?min_gpa=8.0&max_gpa=10.0
+2026-05-22 21:31:14 | INFO | Fetching students — page=1, size=10, course=None, search=None, min_age=None, max_age=None, min_gpa=8.0, max_gpa=10.0, sort_by=None, order=asc
+2026-05-22 21:31:14 | INFO | Returned 1 of 1 total students
+2026-05-22 21:31:14 | INFO | completed - GET http://testserver/students/?min_gpa=8.0&max_gpa=10.0 | status_code=200 | duration = 0.0152s
+2026-05-22 21:31:14 | INFO | HTTP Request: GET http://testserver/students/?min_gpa=8.0&max_gpa=10.0 "HTTP/1.1 200 OK"
+2026-05-22 21:31:14 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:14 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:31:14 | INFO | Student created successfully with id=1
+2026-05-22 21:31:14 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0235s
+2026-05-22 21:31:14 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:14 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:14 | INFO | User 'admin' creating student with email=priya@mail.com
+2026-05-22 21:31:14 | INFO | Student created successfully with id=2
+2026-05-22 21:31:14 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0098s
+2026-05-22 21:31:14 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:14 | INFO | Incoming request - GET http://testserver/students/?search=Sritama
+2026-05-22 21:31:14 | INFO | Fetching students — page=1, size=10, course=None, search=Sritama, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=None, order=asc
+2026-05-22 21:31:14 | INFO | Returned 1 of 1 total students
+2026-05-22 21:31:14 | INFO | completed - GET http://testserver/students/?search=Sritama | status_code=200 | duration = 0.0118s
+2026-05-22 21:31:14 | INFO | HTTP Request: GET http://testserver/students/?search=Sritama "HTTP/1.1 200 OK"
+2026-05-22 21:31:14 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:14 | INFO | User 'admin' creating student with email=a@mail.com
+2026-05-22 21:31:14 | INFO | Student created successfully with id=1
+2026-05-22 21:31:14 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0175s
+2026-05-22 21:31:14 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:14 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:14 | INFO | User 'admin' creating student with email=b@mail.com
+2026-05-22 21:31:14 | INFO | Student created successfully with id=2
+2026-05-22 21:31:14 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0167s
+2026-05-22 21:31:14 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:14 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:14 | INFO | User 'admin' creating student with email=c@mail.com
+2026-05-22 21:31:14 | INFO | Student created successfully with id=3
+2026-05-22 21:31:14 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0156s
+2026-05-22 21:31:14 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:14 | INFO | Incoming request - GET http://testserver/students/?sort_by=gpa&order=desc
+2026-05-22 21:31:14 | INFO | Fetching students — page=1, size=10, course=None, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=gpa, order=desc
+2026-05-22 21:31:14 | INFO | Returned 3 of 3 total students
+2026-05-22 21:31:14 | INFO | completed - GET http://testserver/students/?sort_by=gpa&order=desc | status_code=200 | duration = 0.0157s
+2026-05-22 21:31:14 | INFO | HTTP Request: GET http://testserver/students/?sort_by=gpa&order=desc "HTTP/1.1 200 OK"
+2026-05-22 21:31:14 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:14 | INFO | User 'admin' creating student with email=zara@mail.com
+2026-05-22 21:31:14 | INFO | Student created successfully with id=1
+2026-05-22 21:31:14 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0188s
+2026-05-22 21:31:14 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:14 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:14 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:31:14 | INFO | Student created successfully with id=2
+2026-05-22 21:31:14 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0113s
+2026-05-22 21:31:14 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:14 | INFO | Incoming request - GET http://testserver/students/?sort_by=name&order=asc
+2026-05-22 21:31:14 | INFO | Fetching students — page=1, size=10, course=None, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=name, order=asc
+2026-05-22 21:31:14 | INFO | Returned 2 of 2 total students
+2026-05-22 21:31:14 | INFO | completed - GET http://testserver/students/?sort_by=name&order=asc | status_code=200 | duration = 0.0s
+2026-05-22 21:31:14 | INFO | HTTP Request: GET http://testserver/students/?sort_by=name&order=asc "HTTP/1.1 200 OK"
+2026-05-22 21:31:14 | INFO | Incoming request - GET http://testserver/students/?sort_by=invalid_field
+2026-05-22 21:31:14 | INFO | Fetching students — page=1, size=10, course=None, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=invalid_field, order=asc
+2026-05-22 21:31:14 | INFO | completed - GET http://testserver/students/?sort_by=invalid_field | status_code=400 | duration = 0.0s
+2026-05-22 21:31:14 | INFO | HTTP Request: GET http://testserver/students/?sort_by=invalid_field "HTTP/1.1 400 Bad Request"
+2026-05-22 21:31:53 | INFO | Incoming request - POST http://testserver/login
+2026-05-22 21:31:53 | INFO | Login attempt for username='admin'
+2026-05-22 21:31:53 | INFO | Login successful for username='admin'
+2026-05-22 21:31:53 | INFO | completed - POST http://testserver/login | status_code=200 | duration = 0.3794s
+2026-05-22 21:31:53 | INFO | HTTP Request: POST http://testserver/login "HTTP/1.1 200 OK"
+2026-05-22 21:31:53 | INFO | Incoming request - POST http://testserver/login
+2026-05-22 21:31:53 | INFO | Login attempt for username='admin'
+2026-05-22 21:31:53 | WARNING | Failed login — wrong password for username='admin'
+2026-05-22 21:31:53 | INFO | completed - POST http://testserver/login | status_code=401 | duration = 0.3806s
+2026-05-22 21:31:53 | INFO | HTTP Request: POST http://testserver/login "HTTP/1.1 401 Unauthorized"
+2026-05-22 21:31:53 | INFO | Incoming request - POST http://testserver/login
+2026-05-22 21:31:53 | INFO | Login attempt for username='wronguser'
+2026-05-22 21:31:53 | WARNING | Failed login — invalid username='wronguser'
+2026-05-22 21:31:53 | INFO | completed - POST http://testserver/login | status_code=401 | duration = 0.0122s
+2026-05-22 21:31:53 | INFO | HTTP Request: POST http://testserver/login "HTTP/1.1 401 Unauthorized"
+2026-05-22 21:31:53 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:53 | INFO | completed - POST http://testserver/students/ | status_code=401 | duration = 0.0111s
+2026-05-22 21:31:53 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 401 Unauthorized"
+2026-05-22 21:31:54 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:54 | INFO | completed - POST http://testserver/students/ | status_code=401 | duration = 0.002s
+2026-05-22 21:31:54 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 401 Unauthorized"
+2026-05-22 21:31:54 | INFO | Incoming request - POST http://testserver/login
+2026-05-22 21:31:54 | INFO | Login attempt for username='admin'
+2026-05-22 21:31:54 | INFO | Login successful for username='admin'
+2026-05-22 21:31:54 | INFO | completed - POST http://testserver/login | status_code=200 | duration = 0.3858s
+2026-05-22 21:31:54 | INFO | HTTP Request: POST http://testserver/login "HTTP/1.1 200 OK"
+2026-05-22 21:31:54 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:54 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:31:54 | INFO | Student created successfully with id=1
+2026-05-22 21:31:54 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0185s
+2026-05-22 21:31:54 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:54 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:54 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:31:54 | INFO | Student created successfully with id=1
+2026-05-22 21:31:54 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0127s
+2026-05-22 21:31:54 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:54 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:54 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:31:54 | WARNING | Duplicate email attempted: sri1234@gmail.com
+2026-05-22 21:31:54 | INFO | completed - POST http://testserver/students/ | status_code=400 | duration = 0.0061s
+2026-05-22 21:31:54 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 400 Bad Request"
+2026-05-22 21:31:54 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:54 | WARNING | Validation error on POST http://testserver/students/: ['body->name:String should have at least 2 characters']
+2026-05-22 21:31:54 | INFO | completed - POST http://testserver/students/ | status_code=422 | duration = 0.0092s
+2026-05-22 21:31:54 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 422 Unprocessable Entity"
+2026-05-22 21:31:54 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:54 | WARNING | Validation error on POST http://testserver/students/: ['body->age:Input should be less than or equal to 100']
+2026-05-22 21:31:54 | INFO | completed - POST http://testserver/students/ | status_code=422 | duration = 0.0s
+2026-05-22 21:31:54 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 422 Unprocessable Entity"
+2026-05-22 21:31:54 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:54 | WARNING | Validation error on POST http://testserver/students/: ['body->gpa:Input should be less than or equal to 10']
+2026-05-22 21:31:54 | INFO | completed - POST http://testserver/students/ | status_code=422 | duration = 0.0035s
+2026-05-22 21:31:54 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 422 Unprocessable Entity"
+2026-05-22 21:31:54 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:54 | WARNING | Validation error on POST http://testserver/students/: ['body->email:Value error, Email must be a valid email address']
+2026-05-22 21:31:54 | INFO | completed - POST http://testserver/students/ | status_code=422 | duration = 0.004s
+2026-05-22 21:31:54 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 422 Unprocessable Entity"
+2026-05-22 21:31:54 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:54 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:31:54 | INFO | Student created successfully with id=1
+2026-05-22 21:31:54 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.025s
+2026-05-22 21:31:54 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:54 | INFO | Incoming request - GET http://testserver/students/
+2026-05-22 21:31:54 | INFO | Fetching students — page=1, size=10, course=None, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=None, order=asc
+2026-05-22 21:31:54 | INFO | Returned 1 of 1 total students
+2026-05-22 21:31:54 | INFO | completed - GET http://testserver/students/ | status_code=200 | duration = 0.0162s
+2026-05-22 21:31:54 | INFO | HTTP Request: GET http://testserver/students/ "HTTP/1.1 200 OK"
+2026-05-22 21:31:54 | INFO | Incoming request - GET http://testserver/students/
+2026-05-22 21:31:54 | INFO | Fetching students — page=1, size=10, course=None, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=None, order=asc
+2026-05-22 21:31:54 | INFO | Returned 0 of 0 total students
+2026-05-22 21:31:54 | INFO | completed - GET http://testserver/students/ | status_code=200 | duration = 0.006s
+2026-05-22 21:31:54 | INFO | HTTP Request: GET http://testserver/students/ "HTTP/1.1 200 OK"
+2026-05-22 21:31:54 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:54 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:31:54 | INFO | Student created successfully with id=1
+2026-05-22 21:31:54 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0203s
+2026-05-22 21:31:54 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:54 | INFO | Incoming request - GET http://testserver/students/1
+2026-05-22 21:31:54 | INFO | Fetching student with id=1
+2026-05-22 21:31:54 | INFO | Student id=1 fetched successfully
+2026-05-22 21:31:54 | INFO | completed - GET http://testserver/students/1 | status_code=200 | duration = 0.0084s
+2026-05-22 21:31:54 | INFO | HTTP Request: GET http://testserver/students/1 "HTTP/1.1 200 OK"
+2026-05-22 21:31:54 | INFO | Incoming request - GET http://testserver/students/99999
+2026-05-22 21:31:54 | INFO | Fetching student with id=99999
+2026-05-22 21:31:54 | WARNING | Student id=99999 not found
+2026-05-22 21:31:54 | INFO | completed - GET http://testserver/students/99999 | status_code=404 | duration = 0.0s
+2026-05-22 21:31:54 | INFO | HTTP Request: GET http://testserver/students/99999 "HTTP/1.1 404 Not Found"
+2026-05-22 21:31:54 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:54 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:31:54 | INFO | Student created successfully with id=1
+2026-05-22 21:31:54 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.01s
+2026-05-22 21:31:54 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:54 | INFO | Incoming request - PUT http://testserver/students/1
+2026-05-22 21:31:54 | INFO | User 'admin' updating student id=1
+2026-05-22 21:31:54 | INFO | Student id=1 updated successfully
+2026-05-22 21:31:54 | INFO | completed - PUT http://testserver/students/1 | status_code=200 | duration = 0.0237s
+2026-05-22 21:31:54 | INFO | HTTP Request: PUT http://testserver/students/1 "HTTP/1.1 200 OK"
+2026-05-22 21:31:54 | INFO | Incoming request - PUT http://testserver/students/99999
+2026-05-22 21:31:54 | INFO | User 'admin' updating student id=99999
+2026-05-22 21:31:54 | WARNING | Student id=99999 not found for update
+2026-05-22 21:31:54 | INFO | completed - PUT http://testserver/students/99999 | status_code=404 | duration = 0.0075s
+2026-05-22 21:31:54 | INFO | HTTP Request: PUT http://testserver/students/99999 "HTTP/1.1 404 Not Found"
+2026-05-22 21:31:54 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:54 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:31:54 | INFO | Student created successfully with id=1
+2026-05-22 21:31:54 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0158s
+2026-05-22 21:31:54 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:54 | INFO | Incoming request - PUT http://testserver/students/1
+2026-05-22 21:31:54 | WARNING | Validation error on PUT http://testserver/students/1: ['body->gpa:Input should be less than or equal to 10']
+2026-05-22 21:31:54 | INFO | completed - PUT http://testserver/students/1 | status_code=422 | duration = 0.006s
+2026-05-22 21:31:54 | INFO | HTTP Request: PUT http://testserver/students/1 "HTTP/1.1 422 Unprocessable Entity"
+2026-05-22 21:31:54 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:54 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:31:54 | INFO | Student created successfully with id=1
+2026-05-22 21:31:54 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0027s
+2026-05-22 21:31:54 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:54 | INFO | Incoming request - DELETE http://testserver/students/1
+2026-05-22 21:31:54 | INFO | User 'admin' deleting student id=1
+2026-05-22 21:31:54 | INFO | Student id=1 deleted successfully
+2026-05-22 21:31:54 | INFO | completed - DELETE http://testserver/students/1 | status_code=204 | duration = 0.0136s
+2026-05-22 21:31:54 | INFO | HTTP Request: DELETE http://testserver/students/1 "HTTP/1.1 204 No Content"
+2026-05-22 21:31:54 | INFO | Incoming request - GET http://testserver/students/1
+2026-05-22 21:31:54 | INFO | Fetching student with id=1
+2026-05-22 21:31:54 | WARNING | Student id=1 not found
+2026-05-22 21:31:54 | INFO | completed - GET http://testserver/students/1 | status_code=404 | duration = 0.0s
+2026-05-22 21:31:54 | INFO | HTTP Request: GET http://testserver/students/1 "HTTP/1.1 404 Not Found"
+2026-05-22 21:31:54 | INFO | Incoming request - DELETE http://testserver/students/99999
+2026-05-22 21:31:54 | INFO | User 'admin' deleting student id=99999
+2026-05-22 21:31:54 | WARNING | Student id=99999 not found for deletion
+2026-05-22 21:31:54 | INFO | completed - DELETE http://testserver/students/99999 | status_code=404 | duration = 0.01s
+2026-05-22 21:31:54 | INFO | HTTP Request: DELETE http://testserver/students/99999 "HTTP/1.1 404 Not Found"
+2026-05-22 21:31:54 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:54 | WARNING | Validation error on POST http://testserver/students/: ['body->name:Value error, Name must contain only letters and spaces']
+2026-05-22 21:31:54 | INFO | completed - POST http://testserver/students/ | status_code=422 | duration = 0.006s
+2026-05-22 21:31:54 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 422 Unprocessable Entity"
+2026-05-22 21:31:54 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:54 | WARNING | Validation error on POST http://testserver/students/: ['body->name:Value error, Name must contain only letters and spaces']
+2026-05-22 21:31:54 | INFO | completed - POST http://testserver/students/ | status_code=422 | duration = 0.0052s
+2026-05-22 21:31:54 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 422 Unprocessable Entity"
+2026-05-22 21:31:54 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:55 | WARNING | Validation error on POST http://testserver/students/: ['body->name:Value error, Name must contain only letters and spaces']
+2026-05-22 21:31:55 | INFO | completed - POST http://testserver/students/ | status_code=422 | duration = 0.0107s
+2026-05-22 21:31:55 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 422 Unprocessable Entity"
+2026-05-22 21:31:55 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:55 | WARNING | Validation error on POST http://testserver/students/: ['body->name:Value error, Name must contain only letters and spaces']
+2026-05-22 21:31:55 | INFO | completed - POST http://testserver/students/ | status_code=422 | duration = 0.0s
+2026-05-22 21:31:55 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 422 Unprocessable Entity"
+2026-05-22 21:31:55 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:55 | WARNING | Validation error on POST http://testserver/students/: ['body->name:Value error, Name must contain only letters and spaces']
+2026-05-22 21:31:55 | INFO | completed - POST http://testserver/students/ | status_code=422 | duration = 0.0026s
+2026-05-22 21:31:55 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 422 Unprocessable Entity"
+2026-05-22 21:31:55 | INFO | Incoming request - GET http://testserver/students/?page=1&size=3
+2026-05-22 21:31:55 | INFO | Fetching students — page=1, size=3, course=None, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=None, order=asc
+2026-05-22 21:31:55 | INFO | Returned 0 of 0 total students
+2026-05-22 21:31:55 | INFO | completed - GET http://testserver/students/?page=1&size=3 | status_code=200 | duration = 0.0135s
+2026-05-22 21:31:55 | INFO | HTTP Request: GET http://testserver/students/?page=1&size=3 "HTTP/1.1 200 OK"
+2026-05-22 21:31:55 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:55 | INFO | User 'admin' creating student with email=cs@mail.com
+2026-05-22 21:31:55 | INFO | Student created successfully with id=1
+2026-05-22 21:31:55 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0083s
+2026-05-22 21:31:55 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:55 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:55 | INFO | User 'admin' creating student with email=math@mail.com
+2026-05-22 21:31:55 | INFO | Student created successfully with id=2
+2026-05-22 21:31:55 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0159s
+2026-05-22 21:31:55 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:55 | INFO | Incoming request - GET http://testserver/students/?course=Computer%20Science
+2026-05-22 21:31:55 | INFO | Fetching students — page=1, size=10, course=Computer Science, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=None, order=asc
+2026-05-22 21:31:55 | INFO | Returned 1 of 1 total students
+2026-05-22 21:31:55 | INFO | completed - GET http://testserver/students/?course=Computer%20Science | status_code=200 | duration = 0.0158s
+2026-05-22 21:31:55 | INFO | HTTP Request: GET http://testserver/students/?course=Computer%20Science "HTTP/1.1 200 OK"
+2026-05-22 21:31:55 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:55 | INFO | User 'admin' creating student with email=high@mail.com
+2026-05-22 21:31:55 | INFO | Student created successfully with id=1
+2026-05-22 21:31:55 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.013s
+2026-05-22 21:31:55 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:55 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:55 | INFO | User 'admin' creating student with email=low@mail.com
+2026-05-22 21:31:55 | INFO | Student created successfully with id=2
+2026-05-22 21:31:55 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0139s
+2026-05-22 21:31:55 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:55 | INFO | Incoming request - GET http://testserver/students/?min_gpa=8.0&max_gpa=10.0
+2026-05-22 21:31:55 | INFO | Fetching students — page=1, size=10, course=None, search=None, min_age=None, max_age=None, min_gpa=8.0, max_gpa=10.0, sort_by=None, order=asc
+2026-05-22 21:31:55 | INFO | Returned 1 of 1 total students
+2026-05-22 21:31:55 | INFO | completed - GET http://testserver/students/?min_gpa=8.0&max_gpa=10.0 | status_code=200 | duration = 0.0s
+2026-05-22 21:31:55 | INFO | HTTP Request: GET http://testserver/students/?min_gpa=8.0&max_gpa=10.0 "HTTP/1.1 200 OK"
+2026-05-22 21:31:55 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:55 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:31:55 | INFO | Student created successfully with id=1
+2026-05-22 21:31:55 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0102s
+2026-05-22 21:31:55 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:55 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:55 | INFO | User 'admin' creating student with email=priya@mail.com
+2026-05-22 21:31:55 | INFO | Student created successfully with id=2
+2026-05-22 21:31:55 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0131s
+2026-05-22 21:31:55 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:55 | INFO | Incoming request - GET http://testserver/students/?search=Sritama
+2026-05-22 21:31:55 | INFO | Fetching students — page=1, size=10, course=None, search=Sritama, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=None, order=asc
+2026-05-22 21:31:55 | INFO | Returned 1 of 1 total students
+2026-05-22 21:31:55 | INFO | completed - GET http://testserver/students/?search=Sritama | status_code=200 | duration = 0.0028s
+2026-05-22 21:31:55 | INFO | HTTP Request: GET http://testserver/students/?search=Sritama "HTTP/1.1 200 OK"
+2026-05-22 21:31:55 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:55 | INFO | User 'admin' creating student with email=a@mail.com
+2026-05-22 21:31:55 | INFO | Student created successfully with id=1
+2026-05-22 21:31:55 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0083s
+2026-05-22 21:31:55 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:55 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:55 | INFO | User 'admin' creating student with email=b@mail.com
+2026-05-22 21:31:55 | INFO | Student created successfully with id=2
+2026-05-22 21:31:55 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0216s
+2026-05-22 21:31:55 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:55 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:55 | INFO | User 'admin' creating student with email=c@mail.com
+2026-05-22 21:31:55 | INFO | Student created successfully with id=3
+2026-05-22 21:31:55 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0123s
+2026-05-22 21:31:55 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:55 | INFO | Incoming request - GET http://testserver/students/?sort_by=gpa&order=desc
+2026-05-22 21:31:55 | INFO | Fetching students — page=1, size=10, course=None, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=gpa, order=desc
+2026-05-22 21:31:55 | INFO | Returned 3 of 3 total students
+2026-05-22 21:31:55 | INFO | completed - GET http://testserver/students/?sort_by=gpa&order=desc | status_code=200 | duration = 0.0089s
+2026-05-22 21:31:55 | INFO | HTTP Request: GET http://testserver/students/?sort_by=gpa&order=desc "HTTP/1.1 200 OK"
+2026-05-22 21:31:55 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:55 | INFO | User 'admin' creating student with email=zara@mail.com
+2026-05-22 21:31:55 | INFO | Student created successfully with id=1
+2026-05-22 21:31:55 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0092s
+2026-05-22 21:31:55 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:55 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:31:55 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:31:55 | INFO | Student created successfully with id=2
+2026-05-22 21:31:55 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.012s
+2026-05-22 21:31:55 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:31:55 | INFO | Incoming request - GET http://testserver/students/?sort_by=name&order=asc
+2026-05-22 21:31:55 | INFO | Fetching students — page=1, size=10, course=None, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=name, order=asc
+2026-05-22 21:31:55 | INFO | Returned 2 of 2 total students
+2026-05-22 21:31:55 | INFO | completed - GET http://testserver/students/?sort_by=name&order=asc | status_code=200 | duration = 0.0121s
+2026-05-22 21:31:55 | INFO | HTTP Request: GET http://testserver/students/?sort_by=name&order=asc "HTTP/1.1 200 OK"
+2026-05-22 21:31:55 | INFO | Incoming request - GET http://testserver/students/?sort_by=invalid_field
+2026-05-22 21:31:55 | INFO | Fetching students — page=1, size=10, course=None, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=invalid_field, order=asc
+2026-05-22 21:31:55 | INFO | completed - GET http://testserver/students/?sort_by=invalid_field | status_code=400 | duration = 0.0076s
+2026-05-22 21:31:55 | INFO | HTTP Request: GET http://testserver/students/?sort_by=invalid_field "HTTP/1.1 400 Bad Request"
+2026-05-22 21:32:57 | INFO | Incoming request - POST http://testserver/login
+2026-05-22 21:32:57 | INFO | Login attempt for username='admin'
+2026-05-22 21:32:57 | INFO | Login successful for username='admin'
+2026-05-22 21:32:57 | INFO | completed - POST http://testserver/login | status_code=200 | duration = 0.3745s
+2026-05-22 21:32:57 | INFO | HTTP Request: POST http://testserver/login "HTTP/1.1 200 OK"
+2026-05-22 21:32:57 | INFO | Incoming request - POST http://testserver/login
+2026-05-22 21:32:57 | INFO | Login attempt for username='admin'
+2026-05-22 21:32:58 | WARNING | Failed login — wrong password for username='admin'
+2026-05-22 21:32:58 | INFO | completed - POST http://testserver/login | status_code=401 | duration = 0.4337s
+2026-05-22 21:32:58 | INFO | HTTP Request: POST http://testserver/login "HTTP/1.1 401 Unauthorized"
+2026-05-22 21:32:58 | INFO | Incoming request - POST http://testserver/login
+2026-05-22 21:32:58 | INFO | Login attempt for username='wronguser'
+2026-05-22 21:32:58 | WARNING | Failed login — invalid username='wronguser'
+2026-05-22 21:32:58 | INFO | completed - POST http://testserver/login | status_code=401 | duration = 0.0s
+2026-05-22 21:32:58 | INFO | HTTP Request: POST http://testserver/login "HTTP/1.1 401 Unauthorized"
+2026-05-22 21:32:58 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:32:58 | INFO | completed - POST http://testserver/students/ | status_code=401 | duration = 0.0155s
+2026-05-22 21:32:58 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 401 Unauthorized"
+2026-05-22 21:32:58 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:32:58 | INFO | completed - POST http://testserver/students/ | status_code=401 | duration = 0.0044s
+2026-05-22 21:32:58 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 401 Unauthorized"
+2026-05-22 21:32:58 | INFO | Incoming request - POST http://testserver/login
+2026-05-22 21:32:58 | INFO | Login attempt for username='admin'
+2026-05-22 21:32:58 | INFO | Login successful for username='admin'
+2026-05-22 21:32:58 | INFO | completed - POST http://testserver/login | status_code=200 | duration = 0.3673s
+2026-05-22 21:32:58 | INFO | HTTP Request: POST http://testserver/login "HTTP/1.1 200 OK"
+2026-05-22 21:32:58 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:32:58 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:32:58 | INFO | Student created successfully with id=1
+2026-05-22 21:32:58 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0239s
+2026-05-22 21:32:58 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:32:58 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:32:58 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:32:58 | INFO | Student created successfully with id=1
+2026-05-22 21:32:58 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.017s
+2026-05-22 21:32:58 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:32:58 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:32:58 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:32:58 | WARNING | Duplicate email attempted: sri1234@gmail.com
+2026-05-22 21:32:58 | INFO | completed - POST http://testserver/students/ | status_code=400 | duration = 0.0146s
+2026-05-22 21:32:58 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 400 Bad Request"
+2026-05-22 21:32:58 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:32:58 | WARNING | Validation error on POST http://testserver/students/: ['body->name:String should have at least 2 characters']
+2026-05-22 21:32:58 | INFO | completed - POST http://testserver/students/ | status_code=422 | duration = 0.0034s
+2026-05-22 21:32:58 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 422 Unprocessable Entity"
+2026-05-22 21:32:59 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:32:59 | WARNING | Validation error on POST http://testserver/students/: ['body->age:Input should be less than or equal to 100']
+2026-05-22 21:32:59 | INFO | completed - POST http://testserver/students/ | status_code=422 | duration = 0.005s
+2026-05-22 21:32:59 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 422 Unprocessable Entity"
+2026-05-22 21:32:59 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:32:59 | WARNING | Validation error on POST http://testserver/students/: ['body->gpa:Input should be less than or equal to 10']
+2026-05-22 21:32:59 | INFO | completed - POST http://testserver/students/ | status_code=422 | duration = 0.004s
+2026-05-22 21:32:59 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 422 Unprocessable Entity"
+2026-05-22 21:32:59 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:32:59 | WARNING | Validation error on POST http://testserver/students/: ['body->email:Value error, Email must be a valid email address']
+2026-05-22 21:32:59 | INFO | completed - POST http://testserver/students/ | status_code=422 | duration = 0.0052s
+2026-05-22 21:32:59 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 422 Unprocessable Entity"
+2026-05-22 21:32:59 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:32:59 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:32:59 | INFO | Student created successfully with id=1
+2026-05-22 21:32:59 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0147s
+2026-05-22 21:32:59 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:32:59 | INFO | Incoming request - GET http://testserver/students/
+2026-05-22 21:32:59 | INFO | Fetching students — page=1, size=10, course=None, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=None, order=asc
+2026-05-22 21:32:59 | INFO | Returned 1 of 1 total students
+2026-05-22 21:32:59 | INFO | completed - GET http://testserver/students/ | status_code=200 | duration = 0.0201s
+2026-05-22 21:32:59 | INFO | HTTP Request: GET http://testserver/students/ "HTTP/1.1 200 OK"
+2026-05-22 21:32:59 | INFO | Incoming request - GET http://testserver/students/
+2026-05-22 21:32:59 | INFO | Fetching students — page=1, size=10, course=None, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=None, order=asc
+2026-05-22 21:32:59 | INFO | Returned 0 of 0 total students
+2026-05-22 21:32:59 | INFO | completed - GET http://testserver/students/ | status_code=200 | duration = 0.0s
+2026-05-22 21:32:59 | INFO | HTTP Request: GET http://testserver/students/ "HTTP/1.1 200 OK"
+2026-05-22 21:32:59 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:32:59 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:32:59 | INFO | Student created successfully with id=1
+2026-05-22 21:32:59 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0164s
+2026-05-22 21:32:59 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:32:59 | INFO | Incoming request - GET http://testserver/students/1
+2026-05-22 21:32:59 | INFO | Fetching student with id=1
+2026-05-22 21:32:59 | INFO | Student id=1 fetched successfully
+2026-05-22 21:32:59 | INFO | completed - GET http://testserver/students/1 | status_code=200 | duration = 0.0059s
+2026-05-22 21:32:59 | INFO | HTTP Request: GET http://testserver/students/1 "HTTP/1.1 200 OK"
+2026-05-22 21:32:59 | INFO | Incoming request - GET http://testserver/students/99999
+2026-05-22 21:32:59 | INFO | Fetching student with id=99999
+2026-05-22 21:32:59 | WARNING | Student id=99999 not found
+2026-05-22 21:32:59 | INFO | completed - GET http://testserver/students/99999 | status_code=404 | duration = 0.0122s
+2026-05-22 21:32:59 | INFO | HTTP Request: GET http://testserver/students/99999 "HTTP/1.1 404 Not Found"
+2026-05-22 21:32:59 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:32:59 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:32:59 | INFO | Student created successfully with id=1
+2026-05-22 21:32:59 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0112s
+2026-05-22 21:32:59 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:32:59 | INFO | Incoming request - PUT http://testserver/students/1
+2026-05-22 21:32:59 | INFO | User 'admin' updating student id=1
+2026-05-22 21:32:59 | INFO | Student id=1 updated successfully
+2026-05-22 21:32:59 | INFO | completed - PUT http://testserver/students/1 | status_code=200 | duration = 0.0227s
+2026-05-22 21:32:59 | INFO | HTTP Request: PUT http://testserver/students/1 "HTTP/1.1 200 OK"
+2026-05-22 21:32:59 | INFO | Incoming request - PUT http://testserver/students/99999
+2026-05-22 21:32:59 | INFO | User 'admin' updating student id=99999
+2026-05-22 21:32:59 | WARNING | Student id=99999 not found for update
+2026-05-22 21:32:59 | INFO | completed - PUT http://testserver/students/99999 | status_code=404 | duration = 0.0117s
+2026-05-22 21:32:59 | INFO | HTTP Request: PUT http://testserver/students/99999 "HTTP/1.1 404 Not Found"
+2026-05-22 21:32:59 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:32:59 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:32:59 | INFO | Student created successfully with id=1
+2026-05-22 21:32:59 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.016s
+2026-05-22 21:32:59 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:32:59 | INFO | Incoming request - PUT http://testserver/students/1
+2026-05-22 21:32:59 | WARNING | Validation error on PUT http://testserver/students/1: ['body->gpa:Input should be less than or equal to 10']
+2026-05-22 21:32:59 | INFO | completed - PUT http://testserver/students/1 | status_code=422 | duration = 0.0s
+2026-05-22 21:32:59 | INFO | HTTP Request: PUT http://testserver/students/1 "HTTP/1.1 422 Unprocessable Entity"
+2026-05-22 21:32:59 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:32:59 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:32:59 | INFO | Student created successfully with id=1
+2026-05-22 21:32:59 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0163s
+2026-05-22 21:32:59 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:32:59 | INFO | Incoming request - DELETE http://testserver/students/1
+2026-05-22 21:32:59 | INFO | User 'admin' deleting student id=1
+2026-05-22 21:32:59 | INFO | Student id=1 deleted successfully
+2026-05-22 21:32:59 | INFO | completed - DELETE http://testserver/students/1 | status_code=204 | duration = 0.0127s
+2026-05-22 21:32:59 | INFO | HTTP Request: DELETE http://testserver/students/1 "HTTP/1.1 204 No Content"
+2026-05-22 21:32:59 | INFO | Incoming request - GET http://testserver/students/1
+2026-05-22 21:32:59 | INFO | Fetching student with id=1
+2026-05-22 21:32:59 | WARNING | Student id=1 not found
+2026-05-22 21:32:59 | INFO | completed - GET http://testserver/students/1 | status_code=404 | duration = 0.0s
+2026-05-22 21:32:59 | INFO | HTTP Request: GET http://testserver/students/1 "HTTP/1.1 404 Not Found"
+2026-05-22 21:32:59 | INFO | Incoming request - DELETE http://testserver/students/99999
+2026-05-22 21:32:59 | INFO | User 'admin' deleting student id=99999
+2026-05-22 21:32:59 | WARNING | Student id=99999 not found for deletion
+2026-05-22 21:32:59 | INFO | completed - DELETE http://testserver/students/99999 | status_code=404 | duration = 0.0165s
+2026-05-22 21:32:59 | INFO | HTTP Request: DELETE http://testserver/students/99999 "HTTP/1.1 404 Not Found"
+2026-05-22 21:32:59 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:32:59 | INFO | User 'admin' creating student with email=student0@mail.com
+2026-05-22 21:32:59 | INFO | Student created successfully with id=1
+2026-05-22 21:32:59 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.018s
+2026-05-22 21:32:59 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:32:59 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:32:59 | INFO | User 'admin' creating student with email=student1@mail.com
+2026-05-22 21:32:59 | INFO | Student created successfully with id=2
+2026-05-22 21:32:59 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0166s
+2026-05-22 21:32:59 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:32:59 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:32:59 | INFO | User 'admin' creating student with email=student2@mail.com
+2026-05-22 21:32:59 | INFO | Student created successfully with id=3
+2026-05-22 21:32:59 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0226s
+2026-05-22 21:32:59 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:32:59 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:32:59 | INFO | User 'admin' creating student with email=student3@mail.com
+2026-05-22 21:32:59 | INFO | Student created successfully with id=4
+2026-05-22 21:32:59 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0129s
+2026-05-22 21:32:59 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:32:59 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:32:59 | INFO | User 'admin' creating student with email=student4@mail.com
+2026-05-22 21:32:59 | INFO | Student created successfully with id=5
+2026-05-22 21:32:59 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0127s
+2026-05-22 21:32:59 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:32:59 | INFO | Incoming request - GET http://testserver/students/?page=1&size=3
+2026-05-22 21:32:59 | INFO | Fetching students — page=1, size=3, course=None, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=None, order=asc
+2026-05-22 21:32:59 | INFO | Returned 3 of 5 total students
+2026-05-22 21:32:59 | INFO | completed - GET http://testserver/students/?page=1&size=3 | status_code=200 | duration = 0.0s
+2026-05-22 21:32:59 | INFO | HTTP Request: GET http://testserver/students/?page=1&size=3 "HTTP/1.1 200 OK"
+2026-05-22 21:32:59 | INFO | Incoming request - GET http://testserver/students/?page=2&size=3
+2026-05-22 21:32:59 | INFO | Fetching students — page=2, size=3, course=None, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=None, order=asc
+2026-05-22 21:32:59 | INFO | Returned 2 of 5 total students
+2026-05-22 21:32:59 | INFO | completed - GET http://testserver/students/?page=2&size=3 | status_code=200 | duration = 0.0061s
+2026-05-22 21:32:59 | INFO | HTTP Request: GET http://testserver/students/?page=2&size=3 "HTTP/1.1 200 OK"
+2026-05-22 21:32:59 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:32:59 | INFO | User 'admin' creating student with email=cs@mail.com
+2026-05-22 21:32:59 | INFO | Student created successfully with id=1
+2026-05-22 21:32:59 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0166s
+2026-05-22 21:32:59 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:32:59 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:32:59 | INFO | User 'admin' creating student with email=math@mail.com
+2026-05-22 21:32:59 | INFO | Student created successfully with id=2
+2026-05-22 21:32:59 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.018s
+2026-05-22 21:32:59 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:32:59 | INFO | Incoming request - GET http://testserver/students/?course=Computer%20Science
+2026-05-22 21:32:59 | INFO | Fetching students — page=1, size=10, course=Computer Science, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=None, order=asc
+2026-05-22 21:32:59 | INFO | Returned 1 of 1 total students
+2026-05-22 21:32:59 | INFO | completed - GET http://testserver/students/?course=Computer%20Science | status_code=200 | duration = 0.0155s
+2026-05-22 21:32:59 | INFO | HTTP Request: GET http://testserver/students/?course=Computer%20Science "HTTP/1.1 200 OK"
+2026-05-22 21:32:59 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:32:59 | INFO | User 'admin' creating student with email=high@mail.com
+2026-05-22 21:32:59 | INFO | Student created successfully with id=1
+2026-05-22 21:32:59 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0184s
+2026-05-22 21:32:59 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:32:59 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:32:59 | INFO | User 'admin' creating student with email=low@mail.com
+2026-05-22 21:32:59 | INFO | Student created successfully with id=2
+2026-05-22 21:32:59 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0216s
+2026-05-22 21:32:59 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:32:59 | INFO | Incoming request - GET http://testserver/students/?min_gpa=8.0&max_gpa=10.0
+2026-05-22 21:32:59 | INFO | Fetching students — page=1, size=10, course=None, search=None, min_age=None, max_age=None, min_gpa=8.0, max_gpa=10.0, sort_by=None, order=asc
+2026-05-22 21:32:59 | INFO | Returned 1 of 1 total students
+2026-05-22 21:32:59 | INFO | completed - GET http://testserver/students/?min_gpa=8.0&max_gpa=10.0 | status_code=200 | duration = 0.0027s
+2026-05-22 21:32:59 | INFO | HTTP Request: GET http://testserver/students/?min_gpa=8.0&max_gpa=10.0 "HTTP/1.1 200 OK"
+2026-05-22 21:32:59 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:32:59 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:32:59 | INFO | Student created successfully with id=1
+2026-05-22 21:32:59 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0225s
+2026-05-22 21:32:59 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:32:59 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:32:59 | INFO | User 'admin' creating student with email=priya@mail.com
+2026-05-22 21:32:59 | INFO | Student created successfully with id=2
+2026-05-22 21:32:59 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0144s
+2026-05-22 21:32:59 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:32:59 | INFO | Incoming request - GET http://testserver/students/?search=Sritama
+2026-05-22 21:32:59 | INFO | Fetching students — page=1, size=10, course=None, search=Sritama, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=None, order=asc
+2026-05-22 21:32:59 | INFO | Returned 1 of 1 total students
+2026-05-22 21:32:59 | INFO | completed - GET http://testserver/students/?search=Sritama | status_code=200 | duration = 0.0s
+2026-05-22 21:32:59 | INFO | HTTP Request: GET http://testserver/students/?search=Sritama "HTTP/1.1 200 OK"
+2026-05-22 21:32:59 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:32:59 | INFO | User 'admin' creating student with email=a@mail.com
+2026-05-22 21:32:59 | INFO | Student created successfully with id=1
+2026-05-22 21:32:59 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0169s
+2026-05-22 21:32:59 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:32:59 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:32:59 | INFO | User 'admin' creating student with email=b@mail.com
+2026-05-22 21:32:59 | INFO | Student created successfully with id=2
+2026-05-22 21:32:59 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.009s
+2026-05-22 21:32:59 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:32:59 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:32:59 | INFO | User 'admin' creating student with email=c@mail.com
+2026-05-22 21:32:59 | INFO | Student created successfully with id=3
+2026-05-22 21:32:59 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0s
+2026-05-22 21:32:59 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:32:59 | INFO | Incoming request - GET http://testserver/students/?sort_by=gpa&order=desc
+2026-05-22 21:32:59 | INFO | Fetching students — page=1, size=10, course=None, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=gpa, order=desc
+2026-05-22 21:32:59 | INFO | Returned 3 of 3 total students
+2026-05-22 21:32:59 | INFO | completed - GET http://testserver/students/?sort_by=gpa&order=desc | status_code=200 | duration = 0.0138s
+2026-05-22 21:32:59 | INFO | HTTP Request: GET http://testserver/students/?sort_by=gpa&order=desc "HTTP/1.1 200 OK"
+2026-05-22 21:32:59 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:32:59 | INFO | User 'admin' creating student with email=zara@mail.com
+2026-05-22 21:32:59 | INFO | Student created successfully with id=1
+2026-05-22 21:32:59 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0163s
+2026-05-22 21:32:59 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:32:59 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:32:59 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:32:59 | INFO | Student created successfully with id=2
+2026-05-22 21:32:59 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0051s
+2026-05-22 21:32:59 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:32:59 | INFO | Incoming request - GET http://testserver/students/?sort_by=name&order=asc
+2026-05-22 21:32:59 | INFO | Fetching students — page=1, size=10, course=None, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=name, order=asc
+2026-05-22 21:32:59 | INFO | Returned 2 of 2 total students
+2026-05-22 21:32:59 | INFO | completed - GET http://testserver/students/?sort_by=name&order=asc | status_code=200 | duration = 0.0s
+2026-05-22 21:32:59 | INFO | HTTP Request: GET http://testserver/students/?sort_by=name&order=asc "HTTP/1.1 200 OK"
+2026-05-22 21:32:59 | INFO | Incoming request - GET http://testserver/students/?sort_by=invalid_field
+2026-05-22 21:32:59 | INFO | Fetching students — page=1, size=10, course=None, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=invalid_field, order=asc
+2026-05-22 21:32:59 | INFO | completed - GET http://testserver/students/?sort_by=invalid_field | status_code=400 | duration = 0.0165s
+2026-05-22 21:32:59 | INFO | HTTP Request: GET http://testserver/students/?sort_by=invalid_field "HTTP/1.1 400 Bad Request"
+2026-05-22 21:35:10 | INFO | Incoming request - POST http://testserver/login
+2026-05-22 21:35:10 | INFO | Login attempt for username='admin'
+2026-05-22 21:35:10 | INFO | Login successful for username='admin'
+2026-05-22 21:35:10 | INFO | completed - POST http://testserver/login | status_code=200 | duration = 0.3771s
+2026-05-22 21:35:10 | INFO | HTTP Request: POST http://testserver/login "HTTP/1.1 200 OK"
+2026-05-22 21:35:10 | INFO | Incoming request - POST http://testserver/login
+2026-05-22 21:35:10 | INFO | Login attempt for username='admin'
+2026-05-22 21:35:11 | WARNING | Failed login — wrong password for username='admin'
+2026-05-22 21:35:11 | INFO | completed - POST http://testserver/login | status_code=401 | duration = 0.361s
+2026-05-22 21:35:11 | INFO | HTTP Request: POST http://testserver/login "HTTP/1.1 401 Unauthorized"
+2026-05-22 21:35:11 | INFO | Incoming request - POST http://testserver/login
+2026-05-22 21:35:11 | INFO | Login attempt for username='wronguser'
+2026-05-22 21:35:11 | WARNING | Failed login — invalid username='wronguser'
+2026-05-22 21:35:11 | INFO | completed - POST http://testserver/login | status_code=401 | duration = 0.01s
+2026-05-22 21:35:11 | INFO | HTTP Request: POST http://testserver/login "HTTP/1.1 401 Unauthorized"
+2026-05-22 21:35:11 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:35:11 | INFO | completed - POST http://testserver/students/ | status_code=401 | duration = 0.0042s
+2026-05-22 21:35:11 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 401 Unauthorized"
+2026-05-22 21:35:11 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:35:11 | INFO | completed - POST http://testserver/students/ | status_code=401 | duration = 0.0057s
+2026-05-22 21:35:11 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 401 Unauthorized"
+2026-05-22 21:35:11 | INFO | Incoming request - POST http://testserver/login
+2026-05-22 21:35:11 | INFO | Login attempt for username='admin'
+2026-05-22 21:35:11 | INFO | Login successful for username='admin'
+2026-05-22 21:35:11 | INFO | completed - POST http://testserver/login | status_code=200 | duration = 0.3648s
+2026-05-22 21:35:11 | INFO | HTTP Request: POST http://testserver/login "HTTP/1.1 200 OK"
+2026-05-22 21:35:11 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:35:11 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:35:11 | INFO | Student created successfully with id=1
+2026-05-22 21:35:11 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0157s
+2026-05-22 21:35:11 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:35:11 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:35:11 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:35:11 | INFO | Student created successfully with id=1
+2026-05-22 21:35:11 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.02s
+2026-05-22 21:35:11 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:35:11 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:35:11 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:35:11 | WARNING | Duplicate email attempted: sri1234@gmail.com
+2026-05-22 21:35:11 | INFO | completed - POST http://testserver/students/ | status_code=400 | duration = 0.0072s
+2026-05-22 21:35:11 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 400 Bad Request"
+2026-05-22 21:35:11 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:35:11 | WARNING | Validation error on POST http://testserver/students/: ['body->name:String should have at least 2 characters']
+2026-05-22 21:35:11 | INFO | completed - POST http://testserver/students/ | status_code=422 | duration = 0.0065s
+2026-05-22 21:35:11 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 422 Unprocessable Entity"
+2026-05-22 21:35:11 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:35:11 | WARNING | Validation error on POST http://testserver/students/: ['body->age:Input should be less than or equal to 100']
+2026-05-22 21:35:11 | INFO | completed - POST http://testserver/students/ | status_code=422 | duration = 0.0115s
+2026-05-22 21:35:11 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 422 Unprocessable Entity"
+2026-05-22 21:35:11 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:35:11 | WARNING | Validation error on POST http://testserver/students/: ['body->gpa:Input should be less than or equal to 10']
+2026-05-22 21:35:11 | INFO | completed - POST http://testserver/students/ | status_code=422 | duration = 0.0039s
+2026-05-22 21:35:11 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 422 Unprocessable Entity"
+2026-05-22 21:35:11 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:35:11 | WARNING | Validation error on POST http://testserver/students/: ['body->email:Value error, Email must be a valid email address']
+2026-05-22 21:35:11 | INFO | completed - POST http://testserver/students/ | status_code=422 | duration = 0.0s
+2026-05-22 21:35:11 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 422 Unprocessable Entity"
+2026-05-22 21:35:11 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:35:11 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:35:11 | INFO | Student created successfully with id=1
+2026-05-22 21:35:11 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0171s
+2026-05-22 21:35:11 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:35:11 | INFO | Incoming request - GET http://testserver/students/
+2026-05-22 21:35:11 | INFO | Fetching students — page=1, size=10, course=None, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=None, order=asc
+2026-05-22 21:35:11 | INFO | Returned 1 of 1 total students
+2026-05-22 21:35:11 | INFO | completed - GET http://testserver/students/ | status_code=200 | duration = 0.0s
+2026-05-22 21:35:11 | INFO | HTTP Request: GET http://testserver/students/ "HTTP/1.1 200 OK"
+2026-05-22 21:35:11 | INFO | Incoming request - GET http://testserver/students/
+2026-05-22 21:35:11 | INFO | Fetching students — page=1, size=10, course=None, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=None, order=asc
+2026-05-22 21:35:11 | INFO | Returned 0 of 0 total students
+2026-05-22 21:35:11 | INFO | completed - GET http://testserver/students/ | status_code=200 | duration = 0.0046s
+2026-05-22 21:35:11 | INFO | HTTP Request: GET http://testserver/students/ "HTTP/1.1 200 OK"
+2026-05-22 21:35:11 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:35:11 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:35:11 | INFO | Student created successfully with id=1
+2026-05-22 21:35:11 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0115s
+2026-05-22 21:35:11 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:35:11 | INFO | Incoming request - GET http://testserver/students/1
+2026-05-22 21:35:11 | INFO | Fetching student with id=1
+2026-05-22 21:35:11 | INFO | Student id=1 fetched successfully
+2026-05-22 21:35:11 | INFO | completed - GET http://testserver/students/1 | status_code=200 | duration = 0.011s
+2026-05-22 21:35:11 | INFO | HTTP Request: GET http://testserver/students/1 "HTTP/1.1 200 OK"
+2026-05-22 21:35:11 | INFO | Incoming request - GET http://testserver/students/99999
+2026-05-22 21:35:11 | INFO | Fetching student with id=99999
+2026-05-22 21:35:11 | WARNING | Student id=99999 not found
+2026-05-22 21:35:11 | INFO | completed - GET http://testserver/students/99999 | status_code=404 | duration = 0.0069s
+2026-05-22 21:35:11 | INFO | HTTP Request: GET http://testserver/students/99999 "HTTP/1.1 404 Not Found"
+2026-05-22 21:35:11 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:35:11 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:35:11 | INFO | Student created successfully with id=1
+2026-05-22 21:35:11 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0137s
+2026-05-22 21:35:11 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:35:11 | INFO | Incoming request - PUT http://testserver/students/1
+2026-05-22 21:35:11 | INFO | User 'admin' updating student id=1
+2026-05-22 21:35:11 | INFO | Student id=1 updated successfully
+2026-05-22 21:35:11 | INFO | completed - PUT http://testserver/students/1 | status_code=200 | duration = 0.008s
+2026-05-22 21:35:11 | INFO | HTTP Request: PUT http://testserver/students/1 "HTTP/1.1 200 OK"
+2026-05-22 21:35:11 | INFO | Incoming request - PUT http://testserver/students/99999
+2026-05-22 21:35:11 | INFO | User 'admin' updating student id=99999
+2026-05-22 21:35:11 | WARNING | Student id=99999 not found for update
+2026-05-22 21:35:11 | INFO | completed - PUT http://testserver/students/99999 | status_code=404 | duration = 0.0089s
+2026-05-22 21:35:11 | INFO | HTTP Request: PUT http://testserver/students/99999 "HTTP/1.1 404 Not Found"
+2026-05-22 21:35:11 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:35:11 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:35:11 | INFO | Student created successfully with id=1
+2026-05-22 21:35:11 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0133s
+2026-05-22 21:35:11 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:35:11 | INFO | Incoming request - PUT http://testserver/students/1
+2026-05-22 21:35:11 | WARNING | Validation error on PUT http://testserver/students/1: ['body->gpa:Input should be less than or equal to 10']
+2026-05-22 21:35:11 | INFO | completed - PUT http://testserver/students/1 | status_code=422 | duration = 0.002s
+2026-05-22 21:35:12 | INFO | HTTP Request: PUT http://testserver/students/1 "HTTP/1.1 422 Unprocessable Entity"
+2026-05-22 21:35:12 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:35:12 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:35:12 | INFO | Student created successfully with id=1
+2026-05-22 21:35:12 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0178s
+2026-05-22 21:35:12 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:35:12 | INFO | Incoming request - DELETE http://testserver/students/1
+2026-05-22 21:35:12 | INFO | User 'admin' deleting student id=1
+2026-05-22 21:35:12 | INFO | Student id=1 deleted successfully
+2026-05-22 21:35:12 | INFO | completed - DELETE http://testserver/students/1 | status_code=204 | duration = 0.0149s
+2026-05-22 21:35:12 | INFO | HTTP Request: DELETE http://testserver/students/1 "HTTP/1.1 204 No Content"
+2026-05-22 21:35:12 | INFO | Incoming request - GET http://testserver/students/1
+2026-05-22 21:35:12 | INFO | Fetching student with id=1
+2026-05-22 21:35:12 | WARNING | Student id=1 not found
+2026-05-22 21:35:12 | INFO | completed - GET http://testserver/students/1 | status_code=404 | duration = 0.0103s
+2026-05-22 21:35:12 | INFO | HTTP Request: GET http://testserver/students/1 "HTTP/1.1 404 Not Found"
+2026-05-22 21:35:12 | INFO | Incoming request - DELETE http://testserver/students/99999
+2026-05-22 21:35:12 | INFO | User 'admin' deleting student id=99999
+2026-05-22 21:35:12 | WARNING | Student id=99999 not found for deletion
+2026-05-22 21:35:12 | INFO | completed - DELETE http://testserver/students/99999 | status_code=404 | duration = 0.0105s
+2026-05-22 21:35:12 | INFO | HTTP Request: DELETE http://testserver/students/99999 "HTTP/1.1 404 Not Found"
+2026-05-22 21:35:12 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:35:12 | INFO | User 'admin' creating student with email=student0@mail.com
+2026-05-22 21:35:12 | INFO | Student created successfully with id=1
+2026-05-22 21:35:12 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0066s
+2026-05-22 21:35:12 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:35:12 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:35:12 | INFO | User 'admin' creating student with email=student1@mail.com
+2026-05-22 21:35:12 | INFO | Student created successfully with id=2
+2026-05-22 21:35:12 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0117s
+2026-05-22 21:35:12 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:35:12 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:35:12 | INFO | User 'admin' creating student with email=student2@mail.com
+2026-05-22 21:35:12 | INFO | Student created successfully with id=3
+2026-05-22 21:35:12 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0208s
+2026-05-22 21:35:12 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:35:12 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:35:12 | INFO | User 'admin' creating student with email=student3@mail.com
+2026-05-22 21:35:12 | INFO | Student created successfully with id=4
+2026-05-22 21:35:12 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0166s
+2026-05-22 21:35:12 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:35:12 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:35:12 | INFO | User 'admin' creating student with email=student4@mail.com
+2026-05-22 21:35:12 | INFO | Student created successfully with id=5
+2026-05-22 21:35:12 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0165s
+2026-05-22 21:35:12 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:35:12 | INFO | Incoming request - GET http://testserver/students/?page=1&size=3
+2026-05-22 21:35:12 | INFO | Fetching students — page=1, size=3, course=None, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=None, order=asc
+2026-05-22 21:35:12 | INFO | Returned 3 of 5 total students
+2026-05-22 21:35:12 | INFO | completed - GET http://testserver/students/?page=1&size=3 | status_code=200 | duration = 0.01s
+2026-05-22 21:35:12 | INFO | HTTP Request: GET http://testserver/students/?page=1&size=3 "HTTP/1.1 200 OK"
+2026-05-22 21:35:12 | INFO | Incoming request - GET http://testserver/students/?page=2&size=3
+2026-05-22 21:35:12 | INFO | Fetching students — page=2, size=3, course=None, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=None, order=asc
+2026-05-22 21:35:12 | INFO | Returned 2 of 5 total students
+2026-05-22 21:35:12 | INFO | completed - GET http://testserver/students/?page=2&size=3 | status_code=200 | duration = 0.0s
+2026-05-22 21:35:12 | INFO | HTTP Request: GET http://testserver/students/?page=2&size=3 "HTTP/1.1 200 OK"
+2026-05-22 21:35:12 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:35:12 | INFO | User 'admin' creating student with email=cs@mail.com
+2026-05-22 21:35:12 | INFO | Student created successfully with id=1
+2026-05-22 21:35:12 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0102s
+2026-05-22 21:35:12 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:35:12 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:35:12 | INFO | User 'admin' creating student with email=math@mail.com
+2026-05-22 21:35:12 | INFO | Student created successfully with id=2
+2026-05-22 21:35:12 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0112s
+2026-05-22 21:35:12 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:35:12 | INFO | Incoming request - GET http://testserver/students/?course=Computer%20Science
+2026-05-22 21:35:12 | INFO | Fetching students — page=1, size=10, course=Computer Science, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=None, order=asc
+2026-05-22 21:35:12 | INFO | Returned 1 of 1 total students
+2026-05-22 21:35:12 | INFO | completed - GET http://testserver/students/?course=Computer%20Science | status_code=200 | duration = 0.0098s
+2026-05-22 21:35:12 | INFO | HTTP Request: GET http://testserver/students/?course=Computer%20Science "HTTP/1.1 200 OK"
+2026-05-22 21:35:12 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:35:12 | INFO | User 'admin' creating student with email=high@mail.com
+2026-05-22 21:35:12 | INFO | Student created successfully with id=1
+2026-05-22 21:35:12 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0131s
+2026-05-22 21:35:12 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:35:12 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:35:12 | INFO | User 'admin' creating student with email=low@mail.com
+2026-05-22 21:35:12 | INFO | Student created successfully with id=2
+2026-05-22 21:35:12 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0124s
+2026-05-22 21:35:12 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:35:12 | INFO | Incoming request - GET http://testserver/students/?min_gpa=8.0&max_gpa=10.0
+2026-05-22 21:35:12 | INFO | Fetching students — page=1, size=10, course=None, search=None, min_age=None, max_age=None, min_gpa=8.0, max_gpa=10.0, sort_by=None, order=asc
+2026-05-22 21:35:12 | INFO | Returned 1 of 1 total students
+2026-05-22 21:35:12 | INFO | completed - GET http://testserver/students/?min_gpa=8.0&max_gpa=10.0 | status_code=200 | duration = 0.0056s
+2026-05-22 21:35:12 | INFO | HTTP Request: GET http://testserver/students/?min_gpa=8.0&max_gpa=10.0 "HTTP/1.1 200 OK"
+2026-05-22 21:35:12 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:35:12 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:35:12 | INFO | Student created successfully with id=1
+2026-05-22 21:35:12 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0134s
+2026-05-22 21:35:12 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:35:12 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:35:12 | INFO | User 'admin' creating student with email=priya@mail.com
+2026-05-22 21:35:12 | INFO | Student created successfully with id=2
+2026-05-22 21:35:12 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0189s
+2026-05-22 21:35:12 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:35:12 | INFO | Incoming request - GET http://testserver/students/?search=Sritama
+2026-05-22 21:35:12 | INFO | Fetching students — page=1, size=10, course=None, search=Sritama, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=None, order=asc
+2026-05-22 21:35:12 | INFO | Returned 1 of 1 total students
+2026-05-22 21:35:12 | INFO | completed - GET http://testserver/students/?search=Sritama | status_code=200 | duration = 0.0147s
+2026-05-22 21:35:12 | INFO | HTTP Request: GET http://testserver/students/?search=Sritama "HTTP/1.1 200 OK"
+2026-05-22 21:35:12 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:35:12 | INFO | User 'admin' creating student with email=a@mail.com
+2026-05-22 21:35:12 | INFO | Student created successfully with id=1
+2026-05-22 21:35:12 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0167s
+2026-05-22 21:35:12 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:35:12 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:35:12 | INFO | User 'admin' creating student with email=b@mail.com
+2026-05-22 21:35:12 | INFO | Student created successfully with id=2
+2026-05-22 21:35:12 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0196s
+2026-05-22 21:35:12 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:35:12 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:35:12 | INFO | User 'admin' creating student with email=c@mail.com
+2026-05-22 21:35:12 | INFO | Student created successfully with id=3
+2026-05-22 21:35:12 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.013s
+2026-05-22 21:35:12 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:35:12 | INFO | Incoming request - GET http://testserver/students/?sort_by=gpa&order=desc
+2026-05-22 21:35:12 | INFO | Fetching students — page=1, size=10, course=None, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=gpa, order=desc
+2026-05-22 21:35:12 | INFO | Returned 3 of 3 total students
+2026-05-22 21:35:12 | INFO | completed - GET http://testserver/students/?sort_by=gpa&order=desc | status_code=200 | duration = 0.0082s
+2026-05-22 21:35:12 | INFO | HTTP Request: GET http://testserver/students/?sort_by=gpa&order=desc "HTTP/1.1 200 OK"
+2026-05-22 21:35:12 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:35:12 | INFO | User 'admin' creating student with email=zara@mail.com
+2026-05-22 21:35:12 | INFO | Student created successfully with id=1
+2026-05-22 21:35:12 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0174s
+2026-05-22 21:35:12 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:35:12 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:35:12 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:35:12 | INFO | Student created successfully with id=2
+2026-05-22 21:35:12 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0172s
+2026-05-22 21:35:12 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
+2026-05-22 21:35:12 | INFO | Incoming request - GET http://testserver/students/?sort_by=name&order=asc
+2026-05-22 21:35:12 | INFO | Fetching students — page=1, size=10, course=None, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=name, order=asc
+2026-05-22 21:35:12 | INFO | Returned 2 of 2 total students
+2026-05-22 21:35:12 | INFO | completed - GET http://testserver/students/?sort_by=name&order=asc | status_code=200 | duration = 0.0149s
+2026-05-22 21:35:12 | INFO | HTTP Request: GET http://testserver/students/?sort_by=name&order=asc "HTTP/1.1 200 OK"
+2026-05-22 21:35:12 | INFO | Incoming request - GET http://testserver/students/?sort_by=invalid_field
+2026-05-22 21:35:12 | INFO | Fetching students — page=1, size=10, course=None, search=None, min_age=None, max_age=None, min_gpa=None, max_gpa=None, sort_by=invalid_field, order=asc
+2026-05-22 21:35:12 | INFO | completed - GET http://testserver/students/?sort_by=invalid_field | status_code=400 | duration = 0.004s
+2026-05-22 21:35:12 | INFO | HTTP Request: GET http://testserver/students/?sort_by=invalid_field "HTTP/1.1 400 Bad Request"
+2026-05-22 21:35:51 | INFO | Incoming request - POST http://testserver/login
+2026-05-22 21:35:51 | INFO | Login attempt for username='admin'
+2026-05-22 21:35:52 | INFO | Login successful for username='admin'
+2026-05-22 21:35:52 | INFO | completed - POST http://testserver/login | status_code=200 | duration = 0.368s
+2026-05-22 21:35:52 | INFO | HTTP Request: POST http://testserver/login "HTTP/1.1 200 OK"
+2026-05-22 21:35:52 | INFO | Incoming request - POST http://testserver/students/
+2026-05-22 21:35:52 | INFO | User 'admin' creating student with email=sri1234@gmail.com
+2026-05-22 21:35:52 | INFO | Student created successfully with id=1
+2026-05-22 21:35:52 | INFO | completed - POST http://testserver/students/ | status_code=201 | duration = 0.0137s
+2026-05-22 21:35:52 | INFO | HTTP Request: POST http://testserver/students/ "HTTP/1.1 201 Created"
