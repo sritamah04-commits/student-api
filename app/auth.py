@@ -12,10 +12,10 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 ALGORITHM = os.getenv("ALGORITHM")
 ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES"))
 
-# This tells passlib to use bcrypt for hashing passwords
+
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
-# This tells FastAPI where the login endpoint is
+
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="login")
 
 def hash_password(password: str) -> str:
